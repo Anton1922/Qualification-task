@@ -1,0 +1,68 @@
+.selection {
+	display: flex;
+  margin: 0 auto;
+	width: 65%;
+
+  &__form {
+    width: 55%;
+    background-color: $white;
+  }
+
+  &__indicator {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px auto 60px;
+    width: 380px;
+  }
+
+  &__number-step {
+    margin: 5px auto;
+    width: 100%;
+    text-align: left;
+  }
+
+  &__step {
+    width: 25%;
+    height: 7px;
+    border-radius: 5px;
+
+    &--first {
+      background-color: $gold-indicator; 
+    }
+
+    &--second {
+      background-color: $white-indicator;
+    }
+
+    &--third {
+      background-color: $white-indicator;
+    }
+
+    &--fourth {
+      background-color: $white-indicator;
+    }
+    
+  }
+
+
+  &__instruction {
+    width: 45%;
+    color: $white;
+    background: linear-gradient(180deg, #173363 0%, #11264A 100%), #11264A;
+  }
+
+  &__title {
+    margin: 50px auto 10px;
+    width: 80%;
+    max-width: 315px;
+  }
+
+	&__text {
+    margin: 10px auto 50px;
+    width:  80%;
+    max-width: 315px;
+    font-size: 18px;
+		font-weight: normal;
+    line-height: 25px;
+	}
+}

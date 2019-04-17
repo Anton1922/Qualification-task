@@ -1,0 +1,28 @@
+html, body {
+  -webkit-text-size-adjust: none;
+
+  //min-height: 100%;
+  //height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  //display: flex;
+  //flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  color: $blue-dark;
+}
+
+ .wrapper {
+  margin: 0 auto;
+  //max-width: 1024px;
+ }
+
+button:focus {
+  outline: none;
+}

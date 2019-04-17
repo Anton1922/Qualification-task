@@ -1,0 +1,47 @@
+$baseFontSize: 17px;
+
+//colors
+$black: #000;
+$white: #fff;
+$white70: rgba($white, 0.7);
+//$gray-light: #F6F6F6;
+$gray-light: #E8E8E8;
+$gray: #CFD0D1;
+$gray-dark: #212121;
+$gray-dark80: rgba($gray-dark, 0.8);
+$gray-dark60: rgba($gray-dark, 0.6); //#7a7a7a
+$gray-dark30: rgba($gray-dark, 0.3); //#bcbcbc
+$gray-dark07: rgba($gray-dark, 0.07); //#bcbcbc
+$gray2: #838383;
+$gray2-60: rgba($gray2, 0.6);
+$red-btn: #E11919;
+$red: #D83145;
+$green: #156208;
+$green-light: #9CBCA5;
+$yellow: #FFE500;
+$blue: #284180;
+$blue-light: #307CC2;
+$blue-king: #3A2880;
+$sea: #68B1C0;
+$purple: #7E4CA6;
+$pink: #E3408F;
+$brown: #4F1800;
+$brown-light: #AA6E41;
+$berry: #B04068;
+$blood: #8C0928;
+$orange: #ED6637;
+
+$gold-title: #C69642;
+$gold-indicator: #E8C48A;
+$white-indicator:  #F6F6F6;
+$blue-dark: #11264A;
+
+
+
+//fonts
+$default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+$futuraBook: 'Futura New Book', $default;
+$futuraDemi: 'Futura New Demi', $default;
+$futuraNew: 'Futura New', $default;
+
