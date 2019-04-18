@@ -26,38 +26,71 @@
 
    	<div class="container">
 
-    	<div class="slide slide--first">
+    	<div class="slide slide--first" id="slide1" id="js-slide1">
       	<div class="slide__image slide__image--first"></div>
 
 	      <div class="slide__description">
-	        <h3 class="slide__title h3">Готовое решение с доходом <span>874 000 руб/мес</span></h3>
+	        <h3 class="slide__title h3">Готовое решение с доходом <span>874 000</span> руб/мес</h3>
 
-	        <div class="">
-	          <div>
-	            <h4 class="slide__subtitle h4">Результаты:</h4>
-	            <div class="slide__text text">
-	              <p>Инвестиции: 64 000 000 рублей (~140 000 рублей за м2).</p>
-	              <p>Арендный доход: 874 000 руб/мес с ежегодной индексацией 7%.</p>
-	              <p>ROI – 16,4%, без учета роста стоимости самого помещения.</p>
-	              <p>ROI ~46%, с учетом роста стоимости самого помещения</p>
-	            </div>
+	    		<div class="slide__paragraph">
+	       		<h4 class="slide__subtitle h4">Результаты:</h4>
+	          <div class="slide__text text">
+	            <p>Инвестиции: 64 000 000 рублей (~140 000 рублей за м2).</p>
+	            <p>Арендный доход: 874 000 руб/мес с ежегодной индексацией 7%.</p>
+	            <p>ROI – 16,4%, без учета роста стоимости самого помещения.</p>
+	            <p>ROI ~46%, с учетом роста стоимости самого помещения</p>
 	          </div>
-
-	          <div>
-	            <h4 class="slide__subtitle h4">Что сделано:</h4>
-	            <div class="slide__text text">При оценке количества коммерческих помещений в проекте будущего комплекса ЛСР и планируемой инфраструктуры района поняли, что есть недостаток продуктовых магазинов – всего 2 небольших магазина на 15 000 жителей.</div>
-	          </div>
-
 	        </div>
+
+	        <div class="slide__paragraph">
+	          <h4 class="slide__subtitle h4">Что сделано:</h4>
+	          <div class="slide__text text">При оценке количества коммерческих помещений в проекте будущего комплекса ЛСР и планируемой инфраструктуры района поняли, что есть недостаток продуктовых магазинов – всего 2 небольших магазина на 15 000 жителей.</div>
+	        </div>
+
 	      </div>
 
       <!-- <div class="slide__caption">Кейсы</div> -->
     	</div>
 
-	    <div class="slide slide--second">
+	    <div class="slide slide--second" id="slide2" id="js-slide2">
 	      <div class="slide__image slide__image--second"></div>
-	      <div class="slide__description"></div>
+
+	      <div class="slide__description">
+	      	<h3 class="slide__title h3">Разделение помещений для максимизации дохода</h3>
+
+	    		<div class="slide__paragraph">
+	       		<h4 class="slide__subtitle h4">Результаты:</h4>
+	          <div class="slide__text text">
+	            <p>Инвестиции: 21 870 000 рублей с рассрочкой платежа на 6 месяцев.</p>
+	            <p>Арендный доход: 243 000 рублей в месяц с ежегодной индексацией 5%.</p>
+	            <p>ROI – 13,3%, без учета роста стоимости самого помещения.</p>
+	            <p>Стоимость самого помещения выросла к сегодняшнему дню на 30%.</p>
+	          </div>
+	        </div>
+
+	        <div class="slide__paragraph">
+	          <h4 class="slide__subtitle h4">Что сделано:</h4>
+	          <div class="slide__text text">Купили для клиента готовое коммерческое помещение площадью 162 м2 в ЖК Вива по цене 135 000 за м2.</div>
+	        </div>
+	      </div>
 	    </div>
+
+      <nav class="navigation">
+        <div class="navigation__dots">
+          <a class="navigation__link" href="#slide1" id="js-dot1"></a>
+          <a class="navigation__link" href="#slide2" id="js-dot2"></a>
+          <a class="navigation__link" href="#"></a>
+          <a class="navigation__link" href="#"></a>
+        </div>
+
+        <div class="navigation__arrows">
+        	<button class="navigation__arrow navigation__arrow-back" id="js-arrow-back" type="button"></button>
+        	<div class="navigation__number navigation__number--active" id="js-navigation-number-left">01</div>
+        	<div class="navigation__slash">/</div>
+        	<div class="navigation__number">04</div>
+        	<button class="navigation__arrow navigation__arrow-forward" id="js-arrow-forward" type="button"></button>
+        </div>
+      </nav>
 
    	</div>
 
@@ -91,7 +124,7 @@
       <div class="shell__filter">
         <div class="selection">
 
-          <div class="selection__form">
+          <div class="selection__information">
             <div class="selection__indicator">
               <div class="selection__number-step text">1 из 4</div>
               <div class="selection__step selection__step--first"></div>
@@ -99,6 +132,26 @@
               <div class="selection__step selection__step--third"></div>
               <div class="selection__step selection__step--fourth"></div>
             </div>
+
+            <form class="selection__form">
+            	<p class="selection__subtitle text">1. Какую сумму вы хотите инвестировать?</p>
+
+            	<input class="selection__input--amount" type="text" name="amount" placeholder=" Введите сумму в рублях">
+
+            	<div class="selection__hint">
+            		<div class="selection__hint-arrow"></div>
+            		<div class="selection__hint-body">
+            			<p class="selection__hint-text">Заполните поле слева</p>
+            		</div>
+            	</div>
+
+            	<div class="selection__continer-button">
+            		<div class="selection__arrow"></div>
+
+            		<button class="selection__button" type="button">Далее</button>
+            	</div>
+
+            </form>
           </div>
 
           <div class="selection__instruction">
