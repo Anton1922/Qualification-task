@@ -1,0 +1,88 @@
+.navigation {
+	position: absolute;
+	bottom: 40px;
+	right: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+  line-height: 1;
+
+  &__dots {
+    display: flex;
+    margin: auto 0 0 0;
+    width: 30%;
+  }
+
+	&__link {
+    display: block;
+    margin: 0 10px 0 0;
+    width: 6px;
+    height: 6px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: $blue-dark;
+  }
+
+  &__link:hover {
+    background-color: $gold-indicator;
+  }
+
+  &__arrows {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    width: 50%;
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+    font-size: 30px;
+    color: $grey-nav50;
+  }
+
+  &__arrow {
+    margin: auto 0;
+    width: 15px;
+    height: 15px;
+    border: none;
+    border-bottom: 2px solid $grey-nav50;
+    background: none;
+    cursor: pointer;
+  }
+
+  &__arrow-back {
+    border-left: 2px solid $grey-nav50;
+    transform: rotate(45deg);
+
+    &:hover {
+      border-color: $gold-indicator;
+    }
+  }
+
+  &__arrow-forward {
+    border-right: 2px solid $grey-nav50;
+    transform: rotate(-45deg);
+
+    &:hover {
+      border-color: $gold-indicator;
+    }
+  }
+
+  &__slash {
+    margin: auto 0;
+  }
+
+  &__number {
+    margin: auto 0;
+
+    &--active {
+      font-size: 45px;
+      font-weight: bold;
+      color: $gold-indicator; 
+    }
+  }
+
+  
+}
+
+#js-dot1 {
+  background-color: $gold-indicator;
+}
