@@ -1,18 +1,21 @@
 .selection {
 	display: flex;
   margin: 0 auto;
-	width: 65%;
+	width: 70%;
+  min-width: 1000px;
 
-  &__form {
-    width: 55%;
+  &__information {
+    width: 60%;
+    max-height: 400px;
     background-color: $white;
+    box-shadow: 0px 9px 25px rgba(10, 27, 57, 0.4);
   }
 
   &__indicator {
     display: flex;
     flex-wrap: wrap;
-    margin: 60px auto 60px;
-    width: 380px;
+    margin: 50px auto;
+    width: 90%;
   }
 
   &__number-step {
@@ -22,7 +25,7 @@
   }
 
   &__step {
-    width: 25%;
+    width: 15%;
     height: 7px;
     border-radius: 5px;
 
@@ -44,9 +47,109 @@
     
   }
 
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  &__subtitle {
+    margin: 0 auto 15px 0;
+    width: 90%;
+  }
+
+  &__input--amount {
+    margin: 0 auto 0 0;
+    width: 300px;
+    height: 50px; 
+    outline: none;
+    text-indent: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: (#D7B57E #FAD08C #FAD08C #D7B57E);
+  }
+
+  &__hint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 215px;
+
+    &-arrow {
+      width: 0; 
+      height: 0;
+      border-top: 5px solid transparent;
+      border-right: 5px solid $blue-dark;
+      border-bottom: 5px solid transparent;
+    }
+
+    &-body {
+      width: 200px;
+      min-width: 200px;
+      height: 50px;
+      min-height: 50px;
+      border-radius: 5px;
+      background-color: $blue-dark;
+    }
+
+    &-text {
+      padding: 17px 0;
+      font-weight: 300;
+      font-size: 14px;
+      text-align: center;
+      color: $white;
+    }
+  }
+
+  &__continer-button {
+    display: flex;
+    justify-content: flex-end;
+    margin: 50px auto;
+    width: 100%;   
+  }
+
+  &__arrow {
+    margin: 0;
+    width: 50px;
+    min-width: 50px;
+    height: 80px;
+    min-height: 40px;
+    background-image: url("../images/Vector.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__button {
+    margin: auto 0 10px 10px;
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: (#D7B57E #FAD08C #FAD08C #D7B57E);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: $blue-dark;
+    line-height: normal;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 5px rgba(250, 200, 140, .5);
+    background: linear-gradient(90deg, #D7B57E 0%, #FAD08C 100%);
+
+    &:hover {
+      box-shadow: inset 5px 5px 5px rgba(250, 200, 140, 1);
+    }
+  }
+
 
   &__instruction {
-    width: 45%;
+    width: 40%;
     color: $white;
     background: linear-gradient(180deg, #173363 0%, #11264A 100%), #11264A;
   }
