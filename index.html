@@ -10,10 +10,15 @@
 
   <title>Zolle</title>
 
-  <link rel="stylesheet" type="text/css" href="dist/css/normalize.css">
+  <!-- <link rel="stylesheet" type="text/css" href="dist/css/normalize.css"> -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet"/> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.sumoselect/3.0.2/sumoselect.min.css"> -->
   <link rel="stylesheet" href="dist/css/style.css">
+  
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sumoselect/3.0.2/jquery.sumoselect.min.js"></script> -->
 
 </head>
 <body>
@@ -24,7 +29,7 @@
       <h1 class="header__title h1">Наши кейсы</h1>
     </header>
 
-   	<div class="container">
+   	<div class="container-slider owl-carousel">
 
     	<div class="slide slide--first" id="slide1" id="js-slide1">
       	<div class="slide__image slide__image--first"></div>
@@ -48,8 +53,6 @@
 	        </div>
 
 	      </div>
-
-      <!-- <div class="slide__caption">Кейсы</div> -->
     	</div>
 
 	    <div class="slide slide--second" id="slide2" id="js-slide2">
@@ -75,7 +78,11 @@
 	      </div>
 	    </div>
 
-      <nav class="navigation">
+	    <div class="slide slide--third" id="slide3" id="js-slide3"></div>
+
+	    <div class="slide slide--fourth" id="slide4" id="js-slide4"></div>
+
+      <!--<nav class="navigation">
         <div class="navigation__dots">
           <a class="navigation__link" href="#slide1" id="js-dot1"></a>
           <a class="navigation__link" href="#slide2" id="js-dot2"></a>
@@ -90,7 +97,7 @@
         	<div class="navigation__number">04</div>
         	<button class="navigation__arrow navigation__arrow-forward" id="js-arrow-forward" type="button"></button>
         </div>
-      </nav>
+      </nav> -->
 
    	</div>
 
@@ -121,7 +128,9 @@
 	  </div>
 
 	  <div class="shell">
+
       <div class="shell__filter">
+
         <div class="selection">
 
           <div class="selection__information">
@@ -133,10 +142,10 @@
               <div class="selection__step selection__step--fourth"></div>
             </div>
 
-            <form class="selection__form">
-            	<p class="selection__subtitle text">1. Какую сумму вы хотите инвестировать?</p>
+            <form class="selection__form" id="form1" name="amount">
+            	<label class="selection__label text">1. Какую сумму вы хотите инвестировать?</label>
 
-            	<input class="selection__input--amount" type="text" name="amount" placeholder=" Введите сумму в рублях">
+            	<input class="selection__input" type="text" name="input-amount" placeholder=" Введите сумму в рублях" required="">
 
             	<div class="selection__hint">
             		<div class="selection__hint-arrow"></div>
@@ -148,8 +157,93 @@
             	<div class="selection__continer-button">
             		<div class="selection__arrow"></div>
 
-            		<button class="selection__button" type="button">Далее</button>
+            		<button class="selection__button" type="submit" form="form1">Далее</button>
             	</div>
+
+            </form>
+
+            <form class="selection__form" id="form2" name="year">
+            	<label class="selection__label text">2. В каком году недвижимость должна начать приносить доход?</label>
+
+            	<select class="selection__input" class="js-select-year" name="year" required="">
+            		<option class="selection__option text" value="">2019</option>
+            		<option class="selection__option text" value="">2020</option>
+            		<option class="selection__option text" value="">2021</option>
+            	</select>
+
+            	<div class="selection__hint">
+            		<div class="selection__hint-arrow"></div>
+            		<div class="selection__hint-body">
+            			<p class="selection__hint-text">Заполните поле слева</p>
+            		</div>
+            	</div>
+
+            	<div class="selection__continer-button">
+            		<div class="selection__arrow"></div>
+
+            		<button class="selection__button" type="submit" form="form2">Далее</button>
+            	</div>
+
+            </form>
+
+            <form class="selection__form" id="form3" name="district">
+            	<label class="selection__label text">3. В каком районе вы хотели бы помещение?</label>
+
+            	<select class="selection__input" class="js-select-year" name="district" required="">
+            		<option class="selection__option text" value="">Адмиралтейский</option>
+            		<option class="selection__option text" value="">Василеостровский</option>
+            		<option class="selection__option text" value="">Выборский</option>
+            	</select>
+
+            	<div class="selection__hint">
+            		<div class="selection__hint-arrow"></div>
+            		<div class="selection__hint-body">
+            			<p class="selection__hint-text">Заполните поле слева</p>
+            		</div>
+            	</div>
+
+            	<div class="selection__continer-button">
+            		<div class="selection__arrow"></div>
+
+            		<button class="selection__button" type="submit" form="form3">Далее</button>
+            	</div>
+
+            </form>
+
+            <form class="selection__form" id="form4" name="comment">
+            	<fieldset class="selection__fieldset selection__fieldset--left">
+            		<label class="selection__label text">4. Укажите прочие требования и пожелания:</label>
+
+            		<textarea class="selection__textarea" placeholder="Опишите здесь"></textarea>
+            	</fieldset>
+
+            	<fieldset class="selection__fieldset selection__fieldset--right">
+            		<div class="selection__hint selection__hint--down">
+            			<div class="selection__hint-body">
+            				<p class="selection__hint-text">Заполните поле</p>
+            			</div>
+									<div class="selection__hint-arrow selection__hint-arrow--down"></div>
+            		</div>
+
+            		<div class="selection__container-input">
+            			<label class="selection__label-mobile">Ваш номер телефона</label>
+            			<input class="selection__input selection__input-mobile" type="tel" name="" required="">
+            		</div>
+
+            		<div class="selection__continer-checkbox">
+            			<label class="selection__label-checkbox">
+            				<input class="selection__input-checkbox" type="checkbox" name="" required="">
+            				я принимаю условия передачи информации
+            			</label>
+            		</div>
+
+            		<div class="selection__continer-button selection__continer-button--comment">
+            			<div class="selection__arrow"></div>
+
+            			<button class="selection__button" type="submit" form="form4">Далее</button>
+            		</div>
+            		
+            	</fieldset>
 
             </form>
           </div>
@@ -160,9 +254,24 @@
           </div>
 
         </div>
+
+        <form class="end" id="form-close">
+
+        	<button class="end__cross" type="sumit" form="form-close" >
+        		<div class="end__cross--first"></div>
+        		<div class="end__cross--second"></div>
+        	</button>
+
+        	<h2 class="end__title"></h2>
+
+        	<p></p>
+
+        	<p></p>
+        	
+        </form>
+
       </div>
 	    
-
 	  </div>
 
 
@@ -172,7 +281,7 @@
   </div>
 
 
-
+	
   <script src="dist/js/bundle.js"></script>
 </body>
 </html>
