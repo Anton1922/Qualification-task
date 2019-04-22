@@ -5,4 +5,12 @@ window.$ = $;
 
 import 'bootstrap';
 
-import './app.js'
+import 'owl.carousel';
+
+import './owl.carousel.min.js';
+
+import './app.js';
+
+
+
+//import './slick.min.js'
