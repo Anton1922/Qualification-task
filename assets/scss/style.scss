@@ -2,6 +2,17 @@
 //@import "custom";
 //@import "~bootstrap/scss/bootstrap";
 
+//Slick-carousel
+//@import "libraries/slick/slick.scss";
+//@import "libraries/slick/slick-theme.scss";
+
+//Owl Carousel
+@import "libraries/owl_carousel/owl.carousel";
+@import "libraries/owl_carousel/owl.theme.default";
+
+//Normalize
+@import "helpers/normalize";
+
 // Variables
 @import "helpers/vars";
 
@@ -30,6 +41,8 @@
 @import "components/shell";
 @import "components/selection";
 @import "components/navigation";
+@import "components/end";
+@import "components/owl-carousel";
 
 //layout
 //@import "layout/grid";
