@@ -1,10 +1,15 @@
 .selection {
 	display: flex;
+  //display: none;
   margin: 0 auto;
 	width: 70%;
-  min-width: 1000px;
+  min-width: 1025px;
+  height: 400px;
 
   &__information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 60%;
     max-height: 400px;
     background-color: $white;
@@ -14,7 +19,7 @@
   &__indicator {
     display: flex;
     flex-wrap: wrap;
-    margin: 50px auto;
+    margin: 50px auto 0 auto;
     width: 90%;
   }
 
@@ -50,19 +55,106 @@
   &__form {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    justify-content: space-between;
+    margin: 30px auto;
     width: 90%;
   }
 
-  &__subtitle {
-    margin: 0 auto 15px 0;
-    width: 90%;
+  &__label {
+    display: block;
+    margin: 0 0 15px 0;
+    //width: 90%;
   }
 
-  &__input--amount {
+  &__label-mobile {
+    margin: 0 auto 10px 18px;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 14px;
+    color: #11264A;
+  }
+
+  &__label-checkbox {
+    margin: 0 auto 0 18px;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 14px;
+    color: #11264A;
+  }
+
+  &__input {
     margin: 0 auto 0 0;
     width: 300px;
     height: 50px; 
+    outline: none;
+    text-indent: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: (#D7B57E #FAD08C #FAD08C #D7B57E);
+  }
+
+  &__input-mobile {
+    margin: 0 auto;
+    align-self: flex-end;
+    width: 200px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: $blue-dark;
+    text-align: left;
+  }
+
+  &__input-checkbox {
+    margin: auto 5px auto 0;
+    margin-right: 5px;
+    width: 12px;
+    height: 12px;
+    background-color: #FBD9A4;
+  }
+
+  &__container-input {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+  }
+
+  //&__container-checkbox {
+    //display: flex;
+  //}
+
+  &__option {
+    width: 300px;
+    height: 50px;
+  }
+
+  &__fieldset {
+    display: flex;
+    flex-direction: column;
+    //align-items: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  &__fieldset--left {
+    padding-top: 30px;
+  }
+
+  &__fieldset--right {
+
+  }
+
+  &__textarea {
+    display: block;
+    margin: 0;
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    height: 130px;
+    min-height: 130px;
+    max-height: 130px;
+    box-sizing: border-box;
     outline: none;
     text-indent: 10px;
     border-radius: 5px;
@@ -78,12 +170,24 @@
     margin: 0 auto;
     width: 215px;
 
+    &--down {
+      flex-direction: column;
+      width: 200px;
+      height: 65px;
+    }
+
     &-arrow {
       width: 0; 
       height: 0;
       border-top: 5px solid transparent;
       border-right: 5px solid $blue-dark;
       border-bottom: 5px solid transparent;
+
+      &--down {
+        border-top: 5px solid $blue-dark;
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+      }
     }
 
     &-body {
@@ -93,6 +197,7 @@
       min-height: 50px;
       border-radius: 5px;
       background-color: $blue-dark;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     }
 
     &-text {
@@ -108,7 +213,11 @@
     display: flex;
     justify-content: flex-end;
     margin: 50px auto;
-    width: 100%;   
+    width: 100%;
+
+    &--comment {
+      margin: 0 auto;
+    }  
   }
 
   &__arrow {
@@ -168,4 +277,22 @@
 		font-weight: normal;
     line-height: 25px;
 	}
+
 }
+
+#form1 {
+  display: none;
+}
+
+#form2 {
+  display: none;
+}
+
+#form3 {
+  display: none;
+}
+
+/*#form4 {
+  display: none;
+  margin: 20px auto;
+}*/
