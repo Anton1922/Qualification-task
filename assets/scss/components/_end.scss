@@ -1,0 +1,44 @@
+.end {
+  position: relative;
+	//display: flex;
+  display: none;
+  margin: 0 auto;
+	width: 70%;
+  min-width: 1025px;
+  height: 400px;
+  background-color: $white;
+
+  &__cross {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    width: 25px;
+    height: 25px;
+    //cursor: pointer;
+    border: none;
+    background: none;
+
+    &--first {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 4px;
+      height: 30px;
+      background: #FBD9A4;
+      border-radius: 5px;
+      transform: matrix(-0.71, -0.71, 0.71, -0.71, 0, 0);
+    }
+
+    &--second {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 4px;
+      height: 30px;
+      background: #FBD9A4;
+      border-radius: 5px;
+      transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
+    }
+  }
+}
