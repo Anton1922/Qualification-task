@@ -131,116 +131,117 @@
 
       <div class="shell__filter">
 
-        <div class="selection">
+        <div class="compilation">
 
-          <div class="selection__information">
-            <div class="selection__indicator">
-              <div class="selection__number-step text">1 из 4</div>
-              <div class="selection__step selection__step--first"></div>
-              <div class="selection__step selection__step--second"></div>
-              <div class="selection__step selection__step--third"></div>
-              <div class="selection__step selection__step--fourth"></div>
+          <div class="compilation__information">
+            <div class="compilation__indicator">
+              <div class="compilation__number-step text">1 из 4</div>
+              <div class="compilation__wrapper">
+              	<div class="compilation__step compilation__step--first"></div>
+              	<div class="compilation__step compilation__step--second"></div>
+              	<div class="compilation__step compilation__step--third"></div>
+              	<div class="compilation__step compilation__step--fourth"></div>
+              </div>
             </div>
 
-            <form class="selection__form" id="form1" name="amount">
-            	<label class="selection__label text">1. Какую сумму вы хотите инвестировать?</label>
+            <form class="compilation__form" id="form1" name="amount">
+            	<label class="compilation__label text">1. Какую сумму вы хотите инвестировать?</label>
 
-            	<input class="selection__input" type="text" name="input-amount" placeholder=" Введите сумму в рублях" required="">
+            	<input class="compilation__input" type="text" name="input-amount" placeholder=" Введите сумму в рублях" required="">
 
-            	<div class="selection__hint">
-            		<div class="selection__hint-arrow"></div>
-            		<div class="selection__hint-body">
-            			<p class="selection__hint-text">Заполните поле слева</p>
+            	<div class="compilation__hint">
+            		<div class="compilation__hint-arrow"></div>
+            		<div class="compilation__hint-body">
+            			<p class="compilation__hint-text">Заполните поле слева</p>
             		</div>
             	</div>
 
-            	<div class="selection__continer-button">
-            		<div class="selection__arrow"></div>
+            	<div class="compilation__continer-button">
+            		<div class="compilation__arrow"></div>
 
-            		<button class="selection__button" type="submit" form="form1">Далее</button>
+            		<button class="compilation__button" type="submit" form="form1">Далее</button>
             	</div>
 
             </form>
 
-            <form class="selection__form" id="form2" name="year">
-            	<label class="selection__label text">2. В каком году недвижимость должна начать приносить доход?</label>
+            <form class="compilation__form" id="form2" name="year">
+            	<label class="compilation__label text" for="year">2. В каком году недвижимость должна начать приносить доход?</label>
 
-            	<select class="selection__input" class="js-select-year" name="year" required="">
-            		<option class="selection__option text" value="">2019</option>
-            		<option class="selection__option text" value="">2020</option>
-            		<option class="selection__option text" value="">2021</option>
+            	<select class="compilation__input js-select-year" id="year" form="form2" name="year" required="">
+            		<option class="compilation__option text"></option>
+            		<option class="compilation__option text">2019</option>
+            		<option class="compilation__option text">2020</option>
+            		<option class="compilation__option text">2021</option>
             	</select>
 
-            	<div class="selection__hint">
-            		<div class="selection__hint-arrow"></div>
-            		<div class="selection__hint-body">
-            			<p class="selection__hint-text">Заполните поле слева</p>
+            	<div class="compilation__hint">
+            		<div class="compilation__hint-arrow"></div>
+            		<div class="compilation__hint-body">
+            			<p class="compilation__hint-text">Заполните поле слева</p>
             		</div>
             	</div>
 
-            	<div class="selection__continer-button">
-            		<div class="selection__arrow"></div>
+            	<div class="compilation__container-button">
+            		<div class="compilation__arrow"></div>
 
-            		<button class="selection__button" type="submit" form="form2">Далее</button>
+            		<button class="compilation__button" type="submit" form="form2">Далее</button>
             	</div>
 
             </form>
 
-            <form class="selection__form" id="form3" name="district">
-            	<label class="selection__label text">3. В каком районе вы хотели бы помещение?</label>
+            <form class="compilation__form" id="form3" name="district">
+            	<label class="compilation__label text">3. В каком районе вы хотели бы помещение?</label>
 
-            	<select class="selection__input" class="js-select-year" name="district" required="">
-            		<option class="selection__option text" value="">Адмиралтейский</option>
-            		<option class="selection__option text" value="">Василеостровский</option>
-            		<option class="selection__option text" value="">Выборский</option>
+            	<select class="compilation__input" class="js-select-year" name="district" required="">
+            		<option class="compilation__option text" value="">Адмиралтейский</option>
+            		<option class="compilation__option text" value="">Василеостровский</option>
+            		<option class="compilation__option text" value="">Выборский</option>
             	</select>
 
-            	<div class="selection__hint">
-            		<div class="selection__hint-arrow"></div>
-            		<div class="selection__hint-body">
-            			<p class="selection__hint-text">Заполните поле слева</p>
+            	<div class="compilation__hint">
+            		<div class="compilation__hint-arrow"></div>
+            		<div class="compilation__hint-body">
+            			<p class="compilation__hint-text">Заполните поле слева</p>
             		</div>
             	</div>
 
-            	<div class="selection__continer-button">
-            		<div class="selection__arrow"></div>
+            	<div class="compilation__continer-button">
+            		<div class="compilation__arrow"></div>
 
-            		<button class="selection__button" type="submit" form="form3">Далее</button>
+            		<button class="compilation__button" type="submit" form="form3">Далее</button>
             	</div>
 
             </form>
 
-            <form class="selection__form" id="form4" name="comment">
-            	<fieldset class="selection__fieldset selection__fieldset--left">
-            		<label class="selection__label text">4. Укажите прочие требования и пожелания:</label>
+            <form class="compilation__form" id="form4" name="comment">
+            	<fieldset class="compilation__fieldset compilation__fieldset--left">
+            		<label class="compilation__label text">4. Укажите прочие требования и пожелания:</label>
 
-            		<textarea class="selection__textarea" placeholder="Опишите здесь"></textarea>
+            		<textarea class="compilation__textarea" placeholder="Опишите здесь"></textarea>
             	</fieldset>
 
-            	<fieldset class="selection__fieldset selection__fieldset--right">
-            		<div class="selection__hint selection__hint--down">
-            			<div class="selection__hint-body">
-            				<p class="selection__hint-text">Заполните поле</p>
+            	<fieldset class="compilation__fieldset compilation__fieldset--right">
+            		<div class="compilation__hint compilation__hint--down">
+            			<div class="compilation__hint-body">
+            				<p class="compilation__hint-text">Заполните поле</p>
             			</div>
-									<div class="selection__hint-arrow selection__hint-arrow--down"></div>
+									<div class="compilation__hint-arrow compilation__hint-arrow--down"></div>
             		</div>
 
-            		<div class="selection__container-input">
-            			<label class="selection__label-mobile">Ваш номер телефона</label>
-            			<input class="selection__input selection__input-mobile" type="tel" name="" required="">
+            		<div class="compilation__container-input">
+            			<label class="compilation__label-mobile">Ваш номер телефона</label>
+            			<input class="compilation__input compilation__input-mobile" type="tel" name="" required="">
             		</div>
 
-            		<div class="selection__continer-checkbox">
-            			<label class="selection__label-checkbox">
-            				<input class="selection__input-checkbox" type="checkbox" name="" required="">
-            				я принимаю условия передачи информации
-            			</label>
+            		<div class="compilation__container-checkbox">
+            				<input class="compilation__input-checkbox" id="checkbox" type="checkbox" name="checkbox" required="">
+            				<label class="compilation__label-checkbox" for="checkbox">я принимаю условия передачи информации</label>
             		</div>
 
-            		<div class="selection__continer-button selection__continer-button--comment">
-            			<div class="selection__arrow"></div>
+            		<div class="compilation__container-button compilation__container-button--comment">
+            			<div class="compilation__arrow"></div>
 
-            			<button class="selection__button" type="submit" form="form4">Далее</button>
+            			<button class="compilation__button" type="submit" form="form4">Далее</button>
             		</div>
             		
             	</fieldset>
@@ -248,25 +249,25 @@
             </form>
           </div>
 
-          <div class="selection__instruction">
-            <h2 class="selection__title h2">Подбор лучших вариантов</h2>
-            <p class="selection__text">Заполните форму из 4 вопроссов, и мы подберем 3 самых перспективных варианта под ваши требования в течение 15 минут.</p>
+          <div class="compilation__instruction">
+            <h2 class="compilation__title h2">Подбор лучших вариантов</h2>
+            <p class="compilation__text">Заполните форму из 4 вопроссов, и мы подберем 3 самых перспективных варианта под ваши требования в течение 15 минут.</p>
           </div>
 
         </div>
 
         <form class="end" id="form-close">
 
-        	<button class="end__cross" type="sumit" form="form-close" >
+        	<button class="end__cross" type="submit" form="form-close" >
         		<div class="end__cross--first"></div>
         		<div class="end__cross--second"></div>
         	</button>
 
-        	<h2 class="end__title"></h2>
+        	<h2 class="end__title h2">Приступаем к работе</h2>
 
-        	<p></p>
+        	<p class="end__text text2">Предоставим 3 отличных варианта уже через 15 минут.</p>
 
-        	<p></p>
+        	<p class="end__waiting text2">Ожидайте нашего звонка!</p>
         	
         </form>
 
