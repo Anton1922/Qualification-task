@@ -1,7 +1,10 @@
 .end {
   position: relative;
-	//display: flex;
   display: none;
+	//display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
 	width: 70%;
   min-width: 1025px;
@@ -40,5 +43,19 @@
       border-radius: 5px;
       transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
     }
+  }
+
+  &__title {
+
+  }
+
+  &__text {
+    margin: 20px 0;
+    width: 300px;
+    text-align: center;
+  }
+
+  &__waiting {
+   
   }
 }
