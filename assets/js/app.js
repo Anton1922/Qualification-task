@@ -69,16 +69,26 @@ $(document).ready(function(){
 });
 
 /*$(document).ready(function(){
+  $("#checkbox").checkboxradio({
+    
+  });
+
+});*/
+
+$(document).ready(function(){
+  $(".js-select-year").select2({
+    placeholder: 'Выберите год',
+    minimumResultsForSearch: Infinity,
+  });
+
+});
+
+/*$(document).ready(function(){
   var $containerSlider = $(".container-slider");
 
   $containerSlider.slick({
     //slidesToShow: 3,
     //slidesToScroll: 3
-
-
-
-
   });
-
 
 });*/
