@@ -9,6 +9,7 @@
 //Owl Carousel
 @import "libraries/owl_carousel/owl.carousel";
 @import "libraries/owl_carousel/owl.theme.default";
+@import "~jquery-ui-dist/jquery-ui.min.css";
 
 //Normalize
 @import "helpers/normalize";
@@ -24,7 +25,7 @@
 
 // Vendor
 @import "~@fancyapps/fancybox/dist/jquery.fancybox.css";
-@import "~select2/dist/css/select2";
+@import "~select2/dist/css/select2.min";
 
 // Fonts
 @import "base/fonts";
@@ -42,7 +43,8 @@
 @import "components/selection";
 @import "components/navigation";
 @import "components/end";
-@import "components/owl-carousel";
+@import "components/slider-custom";
+@import "components/checkbox-custom";
 
 //layout
 //@import "layout/grid";
